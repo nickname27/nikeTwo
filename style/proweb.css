@@ -1,0 +1,29 @@
+.proweb {
+    padding: 6px 0;
+    background: #1E1A29;
+}
+
+.proweb__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proweb__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.proweb__text span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 400px) {
+    .proweb__text{
+        text-align: center;
+    }
+}

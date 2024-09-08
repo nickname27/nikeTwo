@@ -1,0 +1,79 @@
+.express {
+    padding: 0 0 50px;
+}
+
+.express__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.express__title {
+    padding: 2px 7px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2E2E3C;
+}
+
+.express__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.express__card {
+    max-width: 350px;
+    width: 100%;
+    max-height: 502px;
+    height: 100%;
+    position: relative;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.express__card:hover{
+    border: 2px solid #A0A0A0;
+}
+
+.express__card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.express__card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.express__card-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .express__cards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .express__wrap{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .express__card-text{
+        font-size: 21px;
+    }
+}

@@ -1,0 +1,44 @@
+.banner {
+    background: url(../img/bg.png) no-repeat center/cover;
+    height: 565px;
+}
+
+.banner__wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.banner__title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.banner__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.banner__text span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 700px){
+    .banner{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .banner__text{
+        font-size: 17px;
+    }
+}
